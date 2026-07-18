@@ -16,3 +16,22 @@ while abs(guess**3 - cube) >= epsilon:
 	numGuesses += 1
 print('numGuesses =', numGuesses)
 print(guess, 'is close to the cube root of', cube)
+######## Cube root for all cubes ############
+# cube = -27
+# neg = False
+# if cube < 0:
+#     neg = True
+# cube = abs(cube)
+# epsilon = 0.01
+# low = 0
+# high = cube
+# guess = (high + low)/2.0
+# while abs(guess**3 - cube) >= epsilon:
+#     if guess**3 < cube :
+#         low = guess
+#     else:
+#         high = guess
+#     guess = (high + low)/2.0
+# if neg == True:
+#     guess = -guess
+# print(f'{guess} is close to the cube root of {cube}')
