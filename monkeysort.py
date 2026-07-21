@@ -1,9 +1,9 @@
 import random
 import time
 
-############################
-## Bogo/Random/Monkey Sort Example
-############################
+
+# Bogo/Random/Monkey Sort Example
+
 def is_sorted(L):
     i = 0
     j = len(L)
@@ -20,13 +20,13 @@ def bogo_sort(L):
         count += 1
     return count
  
-# print("--- BOGO SORT ---")
-# # L = []
-# # for i in range(0, 9):
-# #     L.append(random.randint(0, 100))
-# L = [8, 4, 1, 6, 5, 11, 2, 0]
-# print('L:       ', L)
-# t0 = time.time()
-# count = bogo_sort(L)
-# print('Sorted L:', L)
-# print(count, "shuffles and sorting took: ", time.time() - t0, "s")
+print("--- BOGO SORT ---")
+L = []
+for i in range(0, 9):
+    L.append(random.randint(0, 100))
+L = [8, 4, 1, 6, 5, 11, 2, 0]
+print('L:       ', L)
+t0 = time.time()
+count = bogo_sort(L)
+print('Sorted L:', L)
+print(count, "shuffles and sorting took: ", time.time() - t0, "s")
